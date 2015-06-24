@@ -1,3 +1,9 @@
+IMPORTANT UPDATE
+============================
+Please update to [GAM 3.45] immediately. The latest available GAM version 3.45 contains critical modifications for password updates during user creation / update (gam create user and gam update user). Google has made server-side changes, requiring users to use 3.45 to ensure proper functionality. Please ensure that you update to [GAM 3.45] immediately. Failure to update may result in "Invalid Input" errors.
+
+As a quick workaround instead of upgrading, you can add "nohash" to the user update/create command in order to workaround the issue. This will cause GAM to send the new user password in plaintext over the TLS HTTPS connection.
+
 GAM
 ============================
 GAM is a free, open source command line tool for
@@ -37,6 +43,7 @@ Author
 ------
 GAM is maintained by <a href="mailto:jay0lee@gmail.com">Jay Lee</a>.
 
+[GAM 3.45]: https://git.io/gamreleases
 [GitHub Releases]: https://github.com/jay0lee/GAM/releases
 [GitHub]: https://github.com/jay0lee/GAM/tree/master
 [GitHub Wiki]: https://github.com/jay0lee/GAM/wiki/
