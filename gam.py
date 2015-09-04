@@ -8192,7 +8192,7 @@ access or an 'a' to grant action-only access.
 
   os.system([u'clear', u'cls'][os.name == u'nt'])
   while True:
-    menu_fill = tuple(selected_scopes)+scope_choices
+    menu_fill = tuple(selected_scopes)
     selection = raw_input(menu % menu_fill)
     try:
       if selection.lower().find(u'r') != -1:
